@@ -18,8 +18,18 @@
     </picture>
     <h2>Reprodução de Áudio</h2>
     <p>Reproduzindo áudio em HTML5:</p>
+    <h3>Método menos indicado:</h3>
     <audio src="midia/comedy-male-yelling-yee-ha-sound-effects-free-download-mp3cut.mp3" controls autoplay></audio>
     <br>
-    <audio src="midia/ui-rodrigo-faro.mp3" controls autoplay></audio>
+    <h3>Método mais indicado:</h3>
+    <p>Esse método é compatível com a maior parte dos navegadores. Caso não seja compatível, o cliente terá a opção de fazer download do arquivo.</p>
+    <audio preload="metadata" controls>
+        <source src="midia/ui-rodrigo-faro.mp3" type="audio/mpeg">
+        <source src="midia/ui-rodrigo-faro.ogg" type="audio/ogg">
+        <source src="midia/ui-rodrigo-faro.wav" type="audio/wav">
+        <p>Seu navegador não é compatível com o áudio. 
+            <a href="midia/ui-rodrigo-faro.mp3">Clique aqui para baixar o arquivo.</a>
+        </p>
+    </audio>
 </body>
 </html>
