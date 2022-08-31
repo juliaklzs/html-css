@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        pseudoclasses = :
+        pseudoelementos = ::after
+        # = id
+        . = class
+        > = children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: #3144b1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: #19235c;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: darkgray;
+        }
+
+        a::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color:darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://juliaklzs.github.io/html-css">Repositório GitHub</a></li>
+        <li><a href="https://juliaklzs.github.io/Web-1/exercicio%207">Formulários</a></li>
+        <li><a href="https://juliaklzs.github.io/Web-1/exercicio%206">Tabelas</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/*
+   id HTML = CSS # 
+   class HTML = CSS 
+
+   não é uma boa prática colocar o mesmo id em duas tags diferentes. Nesse caso, o indicado é usar class.
+
+   id=único
+   class=class
+
+   não é boa prática por o nome da classe de acordo com a forma, o ideal é nomear de acordo com a funcionalidade.
+
+   O id sobrepõe a class.
+   
+*/
+body {
+    background-color: papayawhip;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1#mainTitle {
+    text-align: center;
+    color: #ffffff;
+    background-color: brown;
+}
+
+h1 {
+    color: rgb(107, 79, 34);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+}
+
+h2 {
+    color: rgb(68, 50, 22);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+
+.basic {
+    color: rgb(118, 212, 89);
+    font-weight: bold;
+}
+
+.intermediate {
+    color: rgb(212, 212, 89);
+    font-weight: bold;
+}
+
+.advanced {
+    color: rgb(212, 89, 89);
+    font-weight: bold;
+}
+
+.marker {
+    background-color: #e7e558c5;
+}
